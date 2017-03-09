@@ -3,7 +3,7 @@
 void main(){
 
 
-//The machine does not have an change providing operation
+//The machine does not have a change providing operation
 
 
 char input,state;

@@ -24,19 +24,21 @@ echo"\n";
 						   echo "Moving to the new state $state_arr[0]";
 						   $state=$state_arr[0];
 						   $input=$input_val[rand(0,3)];
-                                                       run($input,$state,$input_arr,$state_arr,$input_val);
+                                                   run($input,$state,$input_arr,$state_arr,$input_val);
 							break;	
 				case $input_arr[1]: echo "You entered $input_arr[1] into the machine\n\t";
 						   $total_sum+= $input_val[1];				
 						   echo "Moving to the new state $state_arr[1]" ;
 							$state=$state_arr[1];
 						   $input=$input_val[rand(0,3)];
+                                                   run($input,$state,$input_arr,$state_arr,$input_val);
 							break;
 				case $input_arr[2]: echo "You entered $input_arr[2] into the machine\n\t"  ;
 						   $total_sum+= $input_val[2];				
 						   echo "Moving to the new state $state_arr[2]" ;
 							$state=$state_arr[2];
 						   $input=$input_val[rand(0,3)];
+                                                   run($input,$state,$input_arr,$state_arr,$input_val);
 							break;
 					}
 				break;
@@ -46,20 +48,20 @@ echo"\n";
 						   echo "Moving to the new state $state_arr[1]" ;
 						   $state=$state_arr[1];
 						   $input=$input_val[rand(0,3)];
-							break;	
+						   run($input,$state,$input_arr,$state_arr,$input_val);break;	
 				case $input_arr[1]: echo "You entered $input_arr[1] into the machine\n\t" ;
 						   $total_sum+= $input_val[1];				
 						   echo "Moving to the new state $state_arr[2]" ;
 							$state=$state_arr[2];
 						   $input=$input_val[rand(0,3)];
-							break;
+						   run($input,$state,$input_arr,$state_arr,$input_val);break;
 				case $input_arr[2]: echo "You entered $input_arr[2] into the machine\n\t" ;
 						   $total_sum= $input_val[0];
 							echo "Here is your bottle of coke...\n\n\n\t" ;				
 						   echo "Moving to the new state $state_arr[0]" ;
 							$state=$state_arr[0];
 						   $input=$input_val[rand(0,3)];
-							break;
+						   run($input,$state,$input_arr,$state_arr,$input_val);break;
 					}
 				break;
 	case $state_arr[2]:switch($input){
@@ -68,21 +70,21 @@ echo"\n";
 						   echo "Moving to the new state $state_arr[2]" ;
 						   $state=$state_arr[2];
 						   $input=$input_val[rand(0,3)];
-							break;	
+						   run($input,$state,$input_arr,$state_arr,$input_val);break;	
 				case $input_arr[1]: echo "You entered $input_arr[1] into the machine\n\t" ;
 						   $total_sum= $input_val[0];				
 							echo "Here is your bottle of coke...\n\n\n\t" ;
 						   echo "Moving to the new state $state_arr[0]" ;
 							$state=$state_arr[0];
 						   $input=$input_val[rand(0,3)];
-							break;
+						   run($input,$state,$input_arr,$state_arr,$input_val);break;
 				case $input_arr[2]: echo "You entered $input_arr[2] into the machine\n\t" ;
 						   $total_sum= $input_val[1];
 							echo "Here is your bottle of coke...\n\n\n\t" ;				
 						   echo "Moving to the new state $state_arr[1]" ;
 							$state=$state_arr[1];
 						   $input=$input_val[rand(0,3)];
-							break;
+						   run($input,$state,$input_arr,$state_arr,$input_val);break;
 				
 
 
@@ -97,9 +99,9 @@ echo"\n";
 
 
 
+run($input,$state,$input_arr,$state_arr,$input_val);
 
 
 
-function run($input,$state,$input_arr,$state_arr,$input_val)
 
 ?>		

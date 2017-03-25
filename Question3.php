@@ -100,6 +100,6 @@ echo"\n";
 
 
 
-
+function run($input,$state,$input_arr,$state_arr,$input_val)
 
 ?>		
